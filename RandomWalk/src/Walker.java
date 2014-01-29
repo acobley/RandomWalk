@@ -19,8 +19,7 @@ public class Walker {
 	}
 	
 	public void ChangePosition() {
-		//X=X+2.0*(0.5-Math.random());
-		//Y=Y+2.0*(0.5-Math.random());
+
 	
 		double DecideDirection = Math.random();
 		if (DecideDirection < 0.25) {
