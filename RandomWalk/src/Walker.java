@@ -4,8 +4,6 @@ public class Walker {
 	private double X=0;
 	private double Y=0;
 
-	private double TotalDistance=0;
-
 	public Walker(){ //Constructor
 		
 	}

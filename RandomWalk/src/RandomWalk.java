@@ -1,8 +1,7 @@
 
 public class RandomWalk {
 	static int ActualNoSteps = 500;	// Actual number of steps for this run. Up to 5,000 and 22,000 walkers seems to work fine.
-	static int ActualNoWalkers = 6000
-			; 	// Actual number of Walkers for this run.
+	static int ActualNoWalkers = 6000; 	// Actual number of Walkers for this run.
 
 	public static void main(String[] args) {
 		Walker Walkers[]=new Walker[ActualNoWalkers];
