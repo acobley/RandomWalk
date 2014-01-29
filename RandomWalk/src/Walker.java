@@ -23,7 +23,6 @@ public class Walker {
 		Y=Y+2.0*(0.5-Math.random());
 		
 	}
-	
 
 	public double distanceFromCenter(){
 		double distance= Math.sqrt((double)(X*X+Y*Y));
