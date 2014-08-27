@@ -1,20 +1,16 @@
 
 public class RandomWalk {
-	static int ActualNoSteps = 500;	// Actual number of steps for this run. Up to 5,000 and 22,000 walkers seems to work fine.
-	static int ActualNoWalkers = 6000
+	static int ActualNoWalkers = 60000
 			; 	// Actual number of Walkers for this run.
 
 	public static void main(String[] args) {
+		System.out.println("Start");
 		Walker Walkers[]=new Walker[ActualNoWalkers];
 		for (int WalkerCount=0; WalkerCount<ActualNoWalkers; WalkerCount++){	//Walkers count from zero, so we drop out of the loop at ActualNoWalkers - 1	
 			if (Walkers[WalkerCount] == null) {
 				Walkers[WalkerCount] = new Walker();
 			}
-			for (int StepCount = 1; StepCount <= ActualNoSteps; StepCount++) { 
-			// move and record the new position in the array called Position
-				Walkers[WalkerCount].ChangePosition();
-
-			}
+			Walkers[WalkerCount].walk();
 		}
 		//Now they have all moved
 		double TotalDistance=0.0;
