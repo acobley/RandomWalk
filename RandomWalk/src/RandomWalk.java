@@ -1,10 +1,13 @@
+import java.util.Date;
+
 
 public class RandomWalk {
-	static int ActualNoWalkers = 60000
+	static int ActualNoWalkers = 6000
 			; 	// Actual number of Walkers for this run.
 
 	public static void main(String[] args) {
-		System.out.println("Start");
+		long now=new Date().getTime();
+		System.out.println("Start " +now );
 		Walker Walkers[]=new Walker[ActualNoWalkers];
 		for (int WalkerCount=0; WalkerCount<ActualNoWalkers; WalkerCount++){	//Walkers count from zero, so we drop out of the loop at ActualNoWalkers - 1	
 			if (Walkers[WalkerCount] == null) {
@@ -19,7 +22,8 @@ public class RandomWalk {
 			
 			TotalDistance=TotalDistance+Distance;
 		}
-		System.out.println("Average Distance="+TotalDistance/(double)ActualNoWalkers);
+		long elapsed=new Date().getTime()- now;
+		System.out.println("Average Distance="+TotalDistance/(double)ActualNoWalkers+" : "+elapsed);
 	}
 
 }
