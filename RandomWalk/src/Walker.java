@@ -5,7 +5,7 @@ public class Walker {
 	private double Y=0;
 
 	private double TotalDistance=0;
-	static int ActualNoSteps = 5000;	// Actual number of steps for this run. Up to 5,000 and 22,000 walkers seems to work fine.
+	static int ActualNoSteps = 500000;	// Actual number of steps for this run. Up to 5,000 and 22,000 walkers seems to work fine.
 
 	public Walker(){ //Constructor
 		
