@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 public class RandomWalk {
 	static int ActualNoWalkers = 6000;
 	static int numberInPool=1000;
-			.
+		
 	static Executor pool = Executors.newFixedThreadPool(numberInPool);
 	public static void main(String[] args) {
 		long now=new Date().getTime();
